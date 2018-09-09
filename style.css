@@ -1,0 +1,82 @@
+.body {
+    font-family: Arial, sans-serif;
+}
+
+.movie-cover {
+    width: 1280px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+.aot {
+    background-image: url("./images/aot.jpg");
+}
+.one-piece {
+    background-image: url("./images/one-piece.jpg");
+}
+.pokemon {
+    background-image: url("./images/pokemon.jpg");
+}
+.movie-cover .overlay {
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(59,59,59,0.5970763305322129) 10%, rgba(0,0,0,0) 100%);
+    color: #FFF;
+    position: relative;
+}
+
+.overlay .text {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 16px 16px;
+    position: absolute;
+    top: 80%;
+    right: 40px;
+    border: 1px solid #DDD;
+    border-radius: 3px 3px 3px 3px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.overlay .text:hover {
+    background-color: #000;
+}
+
+.next, .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 0 3px 3px 0;
+    transition: all ease 0.5s;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next:hover, .prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.collector {
+    text-align: center;
+}
+.dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
